@@ -80,7 +80,7 @@ def runner
         break
       end
     else
-      sum += temp_sum
+      sum = temp_sum
     end
   end 
   end_game(sum)
