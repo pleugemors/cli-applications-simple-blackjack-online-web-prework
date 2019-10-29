@@ -78,6 +78,8 @@ def runner
       if ans == 's'
         break
       end
+    else
+      sum += temp_sum
     end
   end 
   end_game(sum)
