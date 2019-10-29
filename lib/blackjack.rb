@@ -69,9 +69,15 @@ def runner
   # code runner 
   welcome
   sum = initial_round
-  while sum < 21 do 
-    display_card_total(sum)
-    sum =hit?(sum)
+  display_card_total(sum)
+    temp_sum =hit?(sum)
+    if temp_sum == sum 
+      prompt_user
+      ans = get_user_input
+      if ans == 's'
+        break
+      end
+    end
   end
   end_game(sum)
   
