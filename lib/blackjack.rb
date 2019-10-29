@@ -70,7 +70,6 @@ def runner
   welcome
   sum = initial_round
   while sum < 21 do 
-    display_card_total(sum)
     temp_sum =hit?(sum)
     if temp_sum == sum 
       prompt_user
@@ -81,6 +80,7 @@ def runner
     else
       sum = temp_sum
     end
+    display_card_total(sum)
   end 
   end_game(sum)
   
