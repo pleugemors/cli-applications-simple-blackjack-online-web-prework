@@ -27,7 +27,7 @@ def get_user_input
   s = gets 
 end
 
-def end_game
+def end_game(card_total)
   # code #end_game here
 end
 
