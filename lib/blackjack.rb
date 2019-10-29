@@ -71,6 +71,8 @@ def runner
   sum = initial_round
   while sum < 21 do 
     temp_sum =hit?(sum)
+    puts sum
+    puts temp_sum
     if temp_sum == sum 
       prompt_user
       ans = get_user_input
