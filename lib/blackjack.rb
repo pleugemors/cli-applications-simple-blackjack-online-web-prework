@@ -78,7 +78,6 @@ def runner
         break
       end
     end
-  end
   end_game(sum)
   
 end
